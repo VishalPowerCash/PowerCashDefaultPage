@@ -1,0 +1,128 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    font-size: 18px;
+    /* Increased base font size */
+}
+
+/* Headings */
+h1 {
+    font-size: 3rem;
+
+    /* Increased base size for h1 */
+    /* letter-spacing: 2px; */
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+h6 {
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 1.2rem;
+    /* Increased base size for h5 */
+}
+
+/* Button */
+.btn {
+    font-size: 1.2rem;
+    /* Increased base size for buttons */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+        /* Smaller h1 for large screens */
+    }
+
+    h5 {
+        font-size: 1.2rem;
+        /* Smaller h5 for large screens */
+    }
+
+    .btn {
+        font-size: 1rem;
+        /* Smaller button font */
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2rem;
+        /* Smaller h1 for medium screens */
+    }
+
+    h5 {
+        font-size: 1rem;
+        /* Smaller h5 for medium screens */
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        /* Smaller button font */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.7rem;
+        /* Smaller h1 for small screens */
+    }
+
+    h5 {
+        font-size: 0.8rem;
+        /* Smaller h5 for small screens */
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        /* Smaller button font */
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+        /* Even smaller h1 for extra small screens */
+    }
+
+    h5 {
+        font-size: 0.7rem;
+        /* Even smaller h5 for extra small screens */
+    }
+
+    .btn {
+        font-size: 0.7rem;
+        /* Even smaller button font */
+    }
+}
+
+/* Apply the fade-in effect to the h1 */
+h1,
+h5 {
+    opacity: 0;
+    /* Start hidden */
+    animation: fadeIn 1s ease-in-out forwards;
+    /* Fade in over 1 second */
+}
+
+/* Keyframes for fade-in */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        /* Final state */
+    }
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
